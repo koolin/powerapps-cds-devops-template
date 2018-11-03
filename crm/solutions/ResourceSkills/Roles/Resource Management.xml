@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{06d5d34b-2fde-e811-a97c-000d3af481f1}" name="Resource Management">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendContact" level="Global" />
+    <RolePrivilege name="prvAppenddemo_contactskill" level="Global" />
+    <RolePrivilege name="prvAppenddemo_resourceskill" level="Global" />
+    <RolePrivilege name="prvAppendToContact" level="Global" />
+    <RolePrivilege name="prvAppendTodemo_contactskill" level="Global" />
+    <RolePrivilege name="prvAppendTodemo_resourceskill" level="Global" />
+    <RolePrivilege name="prvAssignContact" level="Global" />
+    <RolePrivilege name="prvAssigndemo_contactskill" level="Global" />
+    <RolePrivilege name="prvAssigndemo_resourceskill" level="Global" />
+    <RolePrivilege name="prvCreateContact" level="Global" />
+    <RolePrivilege name="prvCreatedemo_contactskill" level="Global" />
+    <RolePrivilege name="prvCreatedemo_resourceskill" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeleteContact" level="Global" />
+    <RolePrivilege name="prvDeletedemo_contactskill" level="Global" />
+    <RolePrivilege name="prvDeletedemo_resourceskill" level="Global" />
+    <RolePrivilege name="prvReadContact" level="Global" />
+    <RolePrivilege name="prvReaddemo_contactskill" level="Global" />
+    <RolePrivilege name="prvReaddemo_resourceskill" level="Global" />
+    <RolePrivilege name="prvReadLicense" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvShareContact" level="Global" />
+    <RolePrivilege name="prvSharedemo_contactskill" level="Global" />
+    <RolePrivilege name="prvSharedemo_resourceskill" level="Global" />
+    <RolePrivilege name="prvWriteContact" level="Global" />
+    <RolePrivilege name="prvWritedemo_contactskill" level="Global" />
+    <RolePrivilege name="prvWritedemo_resourceskill" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

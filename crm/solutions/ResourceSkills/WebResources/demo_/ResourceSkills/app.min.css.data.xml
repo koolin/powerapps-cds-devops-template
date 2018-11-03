@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{e5e7e083-f0da-e811-a96f-000d3a33eb4e}</WebResourceId>
+  <Name>demo_/ResourceSkills/app.min.css</Name>
+  <WebResourceType>2</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/demo_ResourceSkillsappmincssE5E7E083-F0DA-E811-A96F-000D3A33EB4E</FileName>
+</WebResource>

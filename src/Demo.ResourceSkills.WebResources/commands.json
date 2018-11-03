@@ -1,0 +1,23 @@
+{
+  "commands": {
+    "build_typescript": {
+      "fileName": "powershell.exe",
+      "workingDirectory": "commands",
+      "arguments": "-NoProfile -ExecutionPolicy Bypass -NonInteractive -File build_typescript.ps1"
+    },
+    "copy_html": {
+      "fileName": "powershell.exe",
+      "workingDirectory": "commands",
+      "arguments": "-NoProfile -ExecutionPolicy Bypass -NonInteractive -File copy_html.ps1"
+    },
+    "copy_images": {
+      "fileName": "powershell.exe",
+      "workingDirectory": "commands",
+      "arguments": "-NoProfile -ExecutionPolicy Bypass -NonInteractive -File copy_images.ps1"
+    }
+  },
+  "-vs-binding": {
+    "BeforeBuild": [ "copy_html", "copy_images" ],
+    "AfterBuild": [ "build_typescript" ]
+  }
+}

@@ -1,0 +1,26 @@
+#skill-rank {
+    height: 30px;
+    width: 30px;
+    border: 3px solid #666;
+    padding: 5px;
+    background-color: #808080;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+
+    .rank-red {
+        background-color: #ee2c39;
+        color: #fff;
+    }
+
+    .rank-blue {
+        background-color: #3689c9;
+        color: #fff;
+    }
+
+    .rank-green {
+        background-color: #3cb54a;
+        color: #fff;
+    }
+}

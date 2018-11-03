@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{40dcf96d-70da-e811-a968-000d3a33e0b1}</WebResourceId>
+  <Name>demo_/ResourceSkills/skillrank.html</Name>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/demo_ResourceSkillsskillrankhtml40DCF96D-70DA-E811-A968-000D3A33E0B1</FileName>
+</WebResource>

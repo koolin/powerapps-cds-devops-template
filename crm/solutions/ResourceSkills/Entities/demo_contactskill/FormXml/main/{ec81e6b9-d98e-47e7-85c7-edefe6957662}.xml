@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{ec81e6b9-d98e-47e7-85c7-edefe6957662}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{66f85d6a-1450-430e-a693-5a5dc7b30493}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{63e3573b-3735-4378-a478-5a51e55bc304}" name="{63e3573b-3735-4378-a478-5a51e55bc304}" columns="11" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{80a12b6e-037a-9aa9-9d33-1c7c9b076860}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Contact" languagecode="1033" />
+                        </labels>
+                        <control id="demo_contactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="demo_contactid" disabled="false" />
+                      </cell>
+                      <cell id="{1300728d-b08a-a78d-02b0-bd333129c7e7}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6711a5ec-59b6-67e2-4131-246d96bcd7d1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Resource Skill" languagecode="1033" />
+                        </labels>
+                        <control id="demo_resourceskillid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="demo_resourceskillid" disabled="false" />
+                      </cell>
+                      <cell id="{e0380a13-7266-6db6-2065-0a3ab1a30149}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0e0769b7-c88b-7835-bb33-e54dc083c6d4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Rating" languagecode="1033" />
+                        </labels>
+                        <control id="demo_rating" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="demo_rating" disabled="false" />
+                      </cell>
+                      <cell id="{497727a4-d17c-6b1b-b147-9069deb625da}" showlabel="false" colspan="1" auto="false" rowspan="1">
+                        <labels>
+                          <label description="skillrank" languagecode="1033" />
+                        </labels>
+                        <control id="WebResource_skillrank" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                          <parameters>
+                            <Url>demo_/ResourceSkills/skillrank.html</Url>
+                            <PassParameters>false</PassParameters>
+                            <ShowOnMobileClient>false</ShowOnMobileClient>
+                            <Security>false</Security>
+                            <Scrolling>no</Scrolling>
+                            <Border>false</Border>
+                            <WebResourceId>{40DCF96D-70DA-E811-A968-000D3A33E0B1}</WebResourceId>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{038fcd4f-ddad-42e2-b87e-78adfa8ad0c0}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="demo_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="demo_name" uniqueid="{88a72d87-4876-4488-ea47-1ce3bb02c810}" disabled="false" />
+                      </cell>
+                      <cell id="{4ce3e0d9-94e7-ee0e-ec06-587922e19d54}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f6fcbe08-7433-49ad-91a7-62e2449ac222}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell id="{7b8e43d2-ed2a-2710-2ddb-7185920a3ac8}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

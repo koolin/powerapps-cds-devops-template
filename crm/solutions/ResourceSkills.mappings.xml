@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapping>
+  <FileToFile map="PluginAssemblies\**\DemoResourceSkillsPlugins.dll" to="..\..\..\src\Demo.ResourceSkills.Plugins\bin\**\Demo.ResourceSkills.Plugins.dll" />
+  <Folder map="WebResources\" to="..\..\..\src\Demo.ResourceSkills.WebResources\dist\" />
+</Mapping>

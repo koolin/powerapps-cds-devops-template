@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.288" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>ResourceSkills</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Resource Skills" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.1.0.0</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>demo</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Demo" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>demo</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>73767</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="demo_contactskill" behavior="0" />
+      <RootComponent type="1" schemaName="demo_resourceskill" behavior="0" />
+      <RootComponent type="9" schemaName="demo_skillclassification" behavior="0" />
+      <RootComponent type="20" id="{06d5d34b-2fde-e811-a97c-000d3af481f1}" behavior="0" />
+      <RootComponent type="29" id="{471c36ff-95d4-e811-a967-000d3a33eeed}" behavior="0" />
+      <RootComponent type="60" id="{c003a202-6021-4e56-a59a-caa75ff451de}" behavior="0" />
+      <RootComponent type="60" id="{ec81e6b9-d98e-47e7-85c7-edefe6957662}" behavior="0" />
+      <RootComponent type="61" schemaName="demo_/ResourceSkills/app.js" behavior="0" />
+      <RootComponent type="61" schemaName="demo_/ResourceSkills/app.min.css" behavior="0" />
+      <RootComponent type="61" schemaName="demo_/ResourceSkills/demo_contactskill_16x16.png" behavior="0" />
+      <RootComponent type="61" schemaName="demo_/ResourceSkills/demo_contactskill_32x32.png" behavior="0" />
+      <RootComponent type="61" schemaName="demo_/ResourceSkills/demo_resourceskill_16x16.png" behavior="0" />
+      <RootComponent type="61" schemaName="demo_/ResourceSkills/demo_resourceskill_32x32.png" behavior="0" />
+      <RootComponent type="61" schemaName="demo_/ResourceSkills/skillrank.html" behavior="0" />
+      <RootComponent type="62" schemaName="demo_ResourceManagement" behavior="0" />
+      <RootComponent type="80" schemaName="demo_ResourceManagement" behavior="0" />
+      <RootComponent type="91" id="{9fe3dd21-6d1a-45ad-b357-5f1209ad9b4f}" schemaName="Demo.ResourceSkills.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea8f82c46935337c" behavior="0" />
+      <RootComponent type="92" id="{d31d8dc4-0fd8-e811-a968-000d3a33e0b1}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="1" type="80" schemaName="demo_ResourceManagement" displayName="Resource Management" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

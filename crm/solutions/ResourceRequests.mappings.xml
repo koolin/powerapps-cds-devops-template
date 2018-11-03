@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapping>
+	<Folder map="WebResources\abs_\Alerts\images" to="..\..\src\Adoxio.Alerts.WebResources\abs_\Alerts\images" />
+  <Folder map="WebResources\abs_\Alerts\scripts" to="..\..\src\Adoxio.Alerts.WebResources\abs_\Alerts\scripts" />
+</Mapping>

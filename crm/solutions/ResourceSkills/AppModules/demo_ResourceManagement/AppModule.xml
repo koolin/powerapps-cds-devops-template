@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>demo_ResourceManagement</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <AppModuleComponents>
+    <AppModuleComponent type="62" schemaName="demo_ResourceManagement" />
+    <AppModuleComponent type="29" id="{471c36ff-95d4-e811-a967-000d3a33eeed}" />
+    <AppModuleComponent type="60" id="{ee50a18b-3f88-df11-8d93-00155db1891a}" />
+    <AppModuleComponent type="1" schemaName="activitypointer" />
+    <AppModuleComponent type="1" schemaName="contact" />
+    <AppModuleComponent type="1" schemaName="demo_contactskill" />
+    <AppModuleComponent type="60" id="{ec81e6b9-d98e-47e7-85c7-edefe6957662}" />
+    <AppModuleComponent type="1" schemaName="demo_resourceskill" />
+    <AppModuleComponent type="60" id="{c003a202-6021-4e56-a59a-caa75ff451de}" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Resource Management" languagecode="1033" />
+  </LocalizedNames>
+</AppModule>

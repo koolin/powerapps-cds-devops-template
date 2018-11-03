@@ -1,0 +1,26 @@
+﻿<entity name="demo_resourceskill" displayname="Resource Skill" etc="10003" primaryidfield="demo_resourceskillid" primarynamefield="demo_name" disableplugins="true">
+  <fields>
+    <field displayname="Classification" name="demo_classification" type="optionsetvalue" customfield="true" />
+    <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+    <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+    <field displayname="Created On" name="createdon" type="datetime" />
+    <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+    <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+    <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+    <field displayname="Modified On" name="modifiedon" type="datetime" />
+    <field displayname="Name" name="demo_name" type="string" customfield="true" />
+    <field displayname="Owner" name="ownerid" type="owner" />
+    <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+    <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+    <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+    <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+    <field updateCompare="true" displayname="Resource Skill" name="demo_resourceskillid" type="guid" primaryKey="true" />
+    <field displayname="Status" name="statecode" type="state" />
+    <field displayname="Status Reason" name="statuscode" type="status" />
+    <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+    <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+    <field displayname="Version Number" name="versionnumber" type="bigint" />
+    <field displayname="Special Skill" name="demo_specialskill" type="bool" customfield="true" />
+  </fields>
+  <relationships />
+</entity>

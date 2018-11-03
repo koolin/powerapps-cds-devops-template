@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{1300a24d-61da-e811-a967-000d3a33eeed}</WebResourceId>
+  <Name>demo_/ResourceSkills/demo_resourceskill_16x16.png</Name>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/demo_ResourceSkillsdemo_resourceskill_16x16png1300A24D-61DA-E811-A967-000D3A33EEED</FileName>
+</WebResource>

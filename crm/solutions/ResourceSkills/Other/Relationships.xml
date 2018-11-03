@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="business_unit_demo_contactskill" />
+  <EntityRelationship Name="business_unit_demo_resourceskill" />
+  <EntityRelationship Name="demo_contact_demo_contactskill_ContactId" />
+  <EntityRelationship Name="demo_demo_resourceskill_demo_contactskill_ResourceSkill" />
+  <EntityRelationship Name="lk_demo_contactskill_createdby" />
+  <EntityRelationship Name="lk_demo_contactskill_modifiedby" />
+  <EntityRelationship Name="lk_demo_resourceskill_createdby" />
+  <EntityRelationship Name="lk_demo_resourceskill_modifiedby" />
+  <EntityRelationship Name="owner_demo_contactskill" />
+  <EntityRelationship Name="owner_demo_resourceskill" />
+  <EntityRelationship Name="team_demo_contactskill" />
+  <EntityRelationship Name="team_demo_resourceskill" />
+  <EntityRelationship Name="user_demo_contactskill" />
+  <EntityRelationship Name="user_demo_resourceskill" />
+</EntityRelationships>

@@ -1,0 +1,14 @@
+{
+  "name": "demo.resource-skills.web-resources",
+  "version": "0.0.0",
+  "description": "Demo.ResourceSkills.WebResources",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "@types/xrm": "9.0.7"
+  },
+  "engines": {
+    "node": "^8.0.0"
+  }
+}

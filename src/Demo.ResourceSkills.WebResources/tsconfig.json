@@ -1,0 +1,13 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "es5"
+    ],
+    "module": "none",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src"
+  }
+}

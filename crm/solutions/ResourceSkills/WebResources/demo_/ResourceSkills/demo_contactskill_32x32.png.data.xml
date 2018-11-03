@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{10e23a6d-70da-e811-a967-000d3a33eeed}</WebResourceId>
+  <Name>demo_/ResourceSkills/demo_contactskill_32x32.png</Name>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/demo_ResourceSkillsdemo_contactskill_32x32png10E23A6D-70DA-E811-A967-000D3A33EEED</FileName>
+</WebResource>

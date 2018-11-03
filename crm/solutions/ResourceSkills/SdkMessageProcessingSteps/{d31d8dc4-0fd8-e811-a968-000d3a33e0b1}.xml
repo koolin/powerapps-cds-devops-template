@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Demo.ResourceSkills.Plugins.ContactSkill: Create of demo_contactskill" SdkMessageProcessingStepId="{d31d8dc4-0fd8-e811-a968-000d3a33e0b1}">
+  <PluginTypeName>Demo.ResourceSkills.Plugins.ContactSkill, Demo.ResourceSkills.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea8f82c46935337c</PluginTypeName>
+  <PluginTypeId>aae5301b-f657-41f8-8254-41afa78d449f</PluginTypeId>
+  <PrimaryEntity>demo_contactskill</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <Description>Demo.ResourceSkills.Plugins.ContactSkill: Create of demo_contactskill</Description>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>0</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{9ebdbb1b-ea3e-db11-86a7-000a3a5473e8}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>10</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

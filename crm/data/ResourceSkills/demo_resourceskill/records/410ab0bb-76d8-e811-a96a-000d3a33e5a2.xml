@@ -1,0 +1,14 @@
+﻿<record id="410ab0bb-76d8-e811-a96a-000d3a33e5a2">
+  <field name="demo_classification" value="737670001" />
+  <field name="createdby" value="2089c400-4745-4160-87a3-298100e78369" lookupentity="systemuser" lookupentityname="Colin Vermander" />
+  <field name="createdon" value="11/2/2018 7:19:17 PM" />
+  <field name="modifiedby" value="2089c400-4745-4160-87a3-298100e78369" lookupentity="systemuser" lookupentityname="Colin Vermander" />
+  <field name="modifiedon" value="11/2/2018 7:19:17 PM" />
+  <field name="demo_name" value="Integration" />
+  <field name="ownerid" value="2089c400-4745-4160-87a3-298100e78369" lookupentity="systemuser" lookupentityname="Colin Vermander" />
+  <field name="owningbusinessunit" value="22cd6a41-aedd-e811-a977-000d3af34093" lookupentity="businessunit" />
+  <field name="owninguser" value="2089c400-4745-4160-87a3-298100e78369" lookupentity="systemuser" />
+  <field name="demo_resourceskillid" value="410ab0bb-76d8-e811-a96a-000d3a33e5a2" />
+  <field name="statecode" value="0" />
+  <field name="statuscode" value="1" />
+</record>
