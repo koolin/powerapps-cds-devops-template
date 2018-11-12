@@ -7,7 +7,7 @@
 
     # The settings for the actions performed during the export
     [Parameter(Mandatory)]
-    [ValidateSet("Full","Skills","Requests")] # update this list based on files in the ExportSettings folder
+    [ValidateSet("Full","Skills","Requests","Base")] # update this list based on files in the ExportSettings folder
     [string]
     $ExportSettings,
 

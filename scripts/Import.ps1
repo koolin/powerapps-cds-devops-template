@@ -7,7 +7,7 @@
 
     # The settings for the actions performed during the import
     [Parameter(Mandatory)]
-    [ValidateSet("Full","Skills","Requests")] # update this list based on files in the ImportSettings folder
+    [ValidateSet("Full","Skills","Requests","Base")] # update this list based on files in the ImportSettings folder
     [string]
     $ImportSettings,
 
@@ -20,7 +20,7 @@
     $OverwriteOrganization,
 
     # The available actions to perform during the import
-    [ValidateSet("All","Restore-CrmRemoteOrganization","Compress-CrmData","Compress-CrmSolution","New-CrmPackage","Invoke-ImportCrmPackage")]
+    [ValidateSet("All","Restore-CrmRemoteOrganization","Compress-CrmData","Compress-CrmSolution","New-CrmPackage","Invoke-ImportCrmPackage","Solutions","Data")]
     [string[]]
     $Actions = "All"
 )
@@ -35,18 +35,32 @@ if($settings.CrmOrganizationProvisionDefinition -and $CrmConnectionParameters.Se
     $settings.CrmOrganizationProvisionDefinition | Restore-CrmRemoteOrganization -Force:$OverwriteOrganization
 }
 
-if($settings.ExtractedData -and ("All" -in $Actions -or 'Compress-CrmData' -in $Actions)) {
+if($settings.ExtractedData -and ("All" -in $Actions -or 'Compress-CrmData' -in $Actions -or 'Data' -in $Actions)) {
     $settings.ExtractedData | Compress-CrmData
 }
 
-if($settings.ExtractedSolutions -and ("All" -in $Actions -or 'Compress-CrmSolution' -in $Actions)) {
+if($settings.ExtractedSolutions -and ("All" -in $Actions -or 'Compress-CrmSolution' -in $Actions -or 'Solutions' -in $Actions)) {
     $settings.ExtractedSolutions | Compress-CrmSolution
 }
 
-if($settings.CrmPackageDefinition -and ("All" -in $Actions -or 'New-CrmPackage' -in $Actions)) {
+# remove data file from definition if doing only solutions
+if($settings.CrmPackageDefinition -and  'Solutions' -in $Actions) {
+	For ($i=0; $i -lt $settings.CrmPackageDefinition.Length; $i++) {
+		$settings.CrmPackageDefinition[$i].PSObject.Properties.Remove("DataZipFile")
+    }
+}
+
+# remove solution file(s) from definition if doing only data
+if($settings.CrmPackageDefinition -and  'Data' -in $Actions) {
+	For ($i=0; $i -lt $settings.CrmPackageDefinition.Length; $i++) {
+		$settings.CrmPackageDefinition[$i].PSObject.Properties.Remove("SolutionZipFiles")
+    }
+}
+
+if($settings.CrmPackageDefinition -and ("All" -in $Actions -or 'New-CrmPackage' -in $Actions -or 'Solutions' -in $Actions)) {
     $settings.CrmPackageDefinition | New-CrmPackage
 }
 
-if($settings.CrmPackageDeploymentDefinition -and ("All" -in $Actions -or 'Invoke-ImportCrmPackage' -in $Actions)) {
+if($settings.CrmPackageDeploymentDefinition -and ("All" -in $Actions -or 'Invoke-ImportCrmPackage' -in $Actions -or 'Solutions' -in $Actions -or 'Data' -in $Actions)) {
     $settings.CrmPackageDeploymentDefinition | Invoke-ImportCrmPackage
 }
