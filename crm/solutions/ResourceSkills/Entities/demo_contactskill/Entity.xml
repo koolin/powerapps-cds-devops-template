@@ -786,7 +786,6 @@
       <EntityColor></EntityColor>
       <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
       <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
-      <IsMSTeamsIntegrationEnabled>0</IsMSTeamsIntegrationEnabled>
       <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
       <IsSLAEnabled>0</IsSLAEnabled>
       <IsDocumentRecommendationsEnabled>0</IsDocumentRecommendationsEnabled>
@@ -845,7 +844,7 @@
   <RibbonDiffXml />
   <CustomControlDefaultConfigs>
     <CustomControlDefaultConfig>
-      <CustomControlDefaultConfigId>{c039187d-4b5b-443c-97d7-d6a5b751b515}</CustomControlDefaultConfigId>
+      <CustomControlDefaultConfigId>{6561ffe7-e4b7-447c-a866-0b663d7fbce9}</CustomControlDefaultConfigId>
       <ControlDescriptionXML>
         <controlDescriptions />
       </ControlDescriptionXML>

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.288" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.729" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>ResourceSkills</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Resource Skills" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.1.0.0</Version>
+    <Version>1.2.0.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>demo</UniqueName>
@@ -81,7 +81,6 @@
       <RootComponent type="1" schemaName="contact" behavior="1" />
       <RootComponent type="1" schemaName="demo_contactskill" behavior="0" />
       <RootComponent type="1" schemaName="demo_resourceskill" behavior="0" />
-      <RootComponent type="9" schemaName="demo_skillclassification" behavior="0" />
       <RootComponent type="20" id="{06d5d34b-2fde-e811-a97c-000d3af481f1}" behavior="0" />
       <RootComponent type="29" id="{471c36ff-95d4-e811-a967-000d3a33eeed}" behavior="0" />
       <RootComponent type="60" id="{c003a202-6021-4e56-a59a-caa75ff451de}" behavior="0" />
@@ -100,8 +99,12 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="1" type="80" schemaName="demo_ResourceManagement" displayName="Resource Management" />
+        <Required key="0" type="9" schemaName="demo_skillclassification" displayName="Skill Classification" solution="Active" />
+        <Dependent key="1" type="2" schemaName="demo_classification" displayName="Classification" parentSchemaName="demo_resourceskill" parentDisplayName="Resource Skill" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="3" type="80" schemaName="demo_ResourceManagement" displayName="Resource Management" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
