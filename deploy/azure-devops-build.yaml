@@ -1,0 +1,113 @@
+resources:
+- repo: self
+  clean: true
+queue:
+  name: Hosted VS2017
+  demands: 
+  - npm
+  - msbuild
+  - visualstudio
+  - powershell
+
+steps:
+- task: NuGetCommand@2
+  displayName: 'NuGet restore Resource Management'
+  inputs:
+    restoreSolution: src/Demo.ResourceManagement.sln
+
+  continueOnError: true
+
+- task: Npm@1
+  displayName: 'npm install ResourceSkills Web Resources'
+  inputs:
+    workingDir: src/Demo.ResourceSkills.WebResources
+
+    verbose: false
+
+  continueOnError: true
+
+- task: VSBuild@1
+  displayName: 'Build solution src/Demo.ResourceManagement.sln'
+  inputs:
+    solution: src/Demo.ResourceManagement.sln
+
+    clean: true
+
+    msbuildArchitecture: x64
+
+    createLogFile: true
+
+  continueOnError: true
+
+- powershell: ./'src/Demo.ResourceSkills.WebResources/commands/copy_html.ps1'
+  workingDirectory: src/Demo.ResourceSkills.WebResources/commands
+
+  displayName: 'PowerShell Script Copy HTML for ResourceSkills Web Resources'
+  continueOnError: true
+
+- powershell: ./'src/Demo.ResourceSkills.WebResources/commands/copy_images.ps1'
+  workingDirectory: src/Demo.ResourceSkills.WebResources/commands/
+
+  displayName: 'PowerShell Script Copy Images for ResourceSkills Web Resources'
+  continueOnError: true
+
+- task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMToolInstaller.MSCRMToolInstaller@9
+  displayName: 'MSCRM Tool Installer'
+
+  continueOnError: true
+
+- task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMPackSolution.MSCRMPackSolution@10
+  displayName: 'MSCRM Pack Solution: ResourceSkills Managed'
+  inputs:
+    unpackedFilesFolder: crm/solutions/ResourceSkills
+
+    mappingFile: crm/solutions/ResourceSkills.mappings.xml
+
+    packageType: Managed
+
+    outputPath: '$(build.sourcesdirectory)\temp\packed\'
+
+  continueOnError: true
+
+- powershell: |
+   Import-Module .\Adoxio.Dynamics.DevOps\Adoxio.Dynamics.DevOps.psm1 -Force
+   
+   Compress-CrmData -Folder $(build.sourcesdirectory)\crm\data\ResourceSkills -ZipFile $(build.sourcesdirectory)\temp\packed\ResourceSkillsData.zip
+  workingDirectory: scripts
+
+  displayName: 'PowerShell Script Compress-CrmData for ResourceSkills'
+  continueOnError: true
+
+- powershell: |
+   Import-Module .\Adoxio.Dynamics.DevOps\Adoxio.Dynamics.DevOps.psm1 -Force
+   
+   .\Package.ps1 -ImportSettings Skills -PackageType Managed -Actions Generate-Package
+  workingDirectory: scripts
+
+  displayName: 'PowerShell Script Generate-Package for ResourceSkills'
+  continueOnError: true
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    SourceFolder: src/Demo.ResourceManagementDeployment/bin/Debug
+
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+    CleanTargetFolder: true
+
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop-resourcemgmt'
+  inputs:
+    ArtifactName: 'drop-resourcemgmt'
+
+
+- task: knom.vsts-debughelper-tasks.print-env-task.print-env-task@1
+  displayName: 'Inspect Environment Variables'
+
+
+- task: knom.vsts-debughelper-tasks.print-fs-structure-task.print-fs-structure-task@1
+  displayName: 'Inspect File Structure'
+
+
