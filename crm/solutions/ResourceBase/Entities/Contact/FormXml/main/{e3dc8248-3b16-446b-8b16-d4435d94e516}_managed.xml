@@ -99,48 +99,6 @@
                     </row>
                   </rows>
                 </section>
-                <section name="MapSection" showlabel="false" showbar="false" id="{e0109668-cb5b-4b6c-8ca6-9d0c4b24f385}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Left" labelid="{2be78b98-272d-4403-b639-af5c91a1af43}">
-                  <labels>
-                    <label description="" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{4a07b010-3ae2-440c-adbd-7fe13249b0d7}" showlabel="false" rowspan="9" colspan="1" auto="false" labelid="{f42b39de-6367-450c-ab8b-75df85aee29b}">
-                        <labels>
-                          <label description="Map View" languagecode="1033" />
-                        </labels>
-                        <control id="mapcontrol" classid="{62B0DF79-0464-470F-8AF7-4483CFEA0C7D}">
-                          <parameters>
-                            <AddressField>address1_composite</AddressField>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
-                <section name="tab_resourcedetails" showlabel="true" showbar="false" locklevel="0" id="{41c2b795-bea3-d840-941b-74a38b169bc5}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
-                  <labels>
-                    <label description="RESOURCE DETAILS" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{0a71b180-a522-2dca-835c-52a6647a0e73}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                        <control id="demo_primaryskillclassification" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="demo_primaryskillclassification" disabled="false" />
-                      </cell>
-                    </row>
-                  </rows>
-                </section>
               </sections>
             </column>
             <column width="42%">
@@ -219,6 +177,48 @@
                     <row />
                     <row />
                     <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_Resource" id="{c2297212-8520-03d5-d366-7ceb43c89b9b}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Resource Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_resourcedetails" showlabel="true" showbar="false" locklevel="0" id="{41c2b795-bea3-d840-941b-74a38b169bc5}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="RESOURCE DETAILS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0a71b180-a522-2dca-835c-52a6647a0e73}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="demo_primaryskillclassification" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="demo_primaryskillclassification" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca4a91db-05da-2218-3216-64212b952e94}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="demo_liquidplannerworkspaceid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="demo_liquidplannerworkspaceid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{77206930-6b5c-da4b-b9cd-609633e34ce9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="demo_liquidplannermemberid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="demo_liquidplannermemberid" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>

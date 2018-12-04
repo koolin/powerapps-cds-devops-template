@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.729" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.732" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>ResourceBase</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Resource Base" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.0</Version>
+    <Version>1.1.0.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>demo</UniqueName>
@@ -84,7 +84,7 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="CustomControlsCore (9.1.0000.0729)" />
+        <Required key="0" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="CustomControlsCore (9.1.0000.0732)" />
         <Dependent key="1" type="60" displayName="Contact Resource" parentDisplayName="Contact" id="{e3dc8248-3b16-446b-8b16-d4435d94e516}" />
       </MissingDependency>
     </MissingDependencies>

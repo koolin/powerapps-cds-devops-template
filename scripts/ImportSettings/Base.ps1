@@ -19,10 +19,10 @@ $projectRoot = Split-Path -Parent $scriptsRoot
 $solutionExt = if($PackageType -eq "Managed") { "_managed" }
 
 @{
-    ExtractedData = [PSCustomObject]@{
-        Folder = "$projectRoot\crm\data\ResourceBase"
-        ZipFile = "$projectRoot\temp\packed\ResourceBaseData.zip"
-    }
+    #ExtractedData = [PSCustomObject]@{
+    #    Folder = "$projectRoot\crm\data\ResourceBase"
+    #    ZipFile = "$projectRoot\temp\packed\ResourceBaseData.zip"
+    #}
     ExtractedSolutions = @(
         [PSCustomObject]@{
             Folder = "$projectRoot\crm\solutions\ResourceBase"
