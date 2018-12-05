@@ -39,6 +39,8 @@ $solutionExt = if($PackageType -eq "Managed") { "_managed" }
                 "$projectRoot\temp\packed\ResourceBase.zip"
                 "$projectRoot\temp\packed\ResourceSkills$solutionExt.zip"
             )
+			PackageFolder = "$projectRoot\src\Demo.ResourceManagementDeployment\bin\Debug\PkgFolder\"
+			PackageDllFile = "$projectRoot\src\Demo.ResourceManagementDeployment\bin\Debug\Demo.ResourceManagementDeployment.dll"
         }
     )
     #CrmOrganizationProvisionDefinition = [PSCustomObject]@{
