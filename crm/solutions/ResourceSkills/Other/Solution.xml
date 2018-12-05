@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.729" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.979" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>ResourceSkills</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Resource Skills" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.2.0.0</Version>
+    <Version>1.2.0.1</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>demo</UniqueName>
@@ -99,7 +99,7 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="9" schemaName="demo_skillclassification" displayName="Skill Classification" solution="Active" />
+        <Required key="0" type="9" schemaName="demo_skillclassification" displayName="Skill Classification" solution="ResourceBase (1.1.0.0)" />
         <Dependent key="1" type="2" schemaName="demo_classification" displayName="Classification" parentSchemaName="demo_resourceskill" parentDisplayName="Resource Skill" />
       </MissingDependency>
       <MissingDependency>

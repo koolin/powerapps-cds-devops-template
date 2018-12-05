@@ -59,7 +59,7 @@ namespace Demo.ResourceSkills.Plugins
 
                     if (result.Entities.Any())
                     {
-                        throw new InvalidPluginExecutionException("Skill rating for this contact and resource skill already exists.  ");
+                        //throw new InvalidPluginExecutionException("Skill rating for this contact and resource skill already exists.  ");
                     }
                         
                 }
