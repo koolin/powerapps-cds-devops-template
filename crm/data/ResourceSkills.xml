@@ -21,7 +21,6 @@
       <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
       <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
       <field displayname="Version Number" name="versionnumber" type="bigint" />
-      <field displayname="Special Skill" name="demo_specialskill" type="bool" customfield="true" />
     </fields>
     <relationships />
   </entity>
