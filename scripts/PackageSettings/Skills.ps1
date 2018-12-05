@@ -36,7 +36,7 @@ $solutionExt = if($PackageType -eq "Managed") { "_managed" }
         [PSCustomObject]@{
             DataZipFile = "$projectRoot\temp\packed\ResourceSkillsData.zip"
             SolutionZipFiles = @(
-                "$projectRoot\temp\packed\ResourceBase.zip"
+                "$projectRoot\temp\packed\ResourceBase_managed.zip"
                 "$projectRoot\temp\packed\ResourceSkills$solutionExt.zip"
             )
 			PackageFolder = "$projectRoot\src\Demo.ResourceManagementDeployment\bin\Debug\PkgFolder\"
