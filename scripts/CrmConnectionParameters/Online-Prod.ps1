@@ -6,6 +6,6 @@
 
 @{
     OrganizationName = "orgd55873f8" # see Settings > Customizations > Developer Resources > "Unique Name"
-    ServerUrl = "https://org6dbf7cbe.crm.dynamics.com" # the online organization URL
+    ServerUrl = "https://org6dbf7cbe.crm3.dynamics.com" # the online organization URL
     Credential = (Get-Credential) # prompt for credentials
 }

@@ -20,6 +20,12 @@ $solutionExt = if($PackageType -eq "Managed") { "_managed" }
     }
     ExtractedSolutions = @(
         [PSCustomObject]@{
+            Folder = "$projectRoot\crm\solutions\ResourceBase"
+            MappingXmlFile = "$projectRoot\crm\solutions\ResourceBase.mappings.xml"
+            PackageType = "Managed"
+            ZipFile = "$projectRoot\temp\packed\ResourceBase.zip"
+        },
+        [PSCustomObject]@{
             Folder = "$projectRoot\crm\solutions\ResourceSkills"
             MappingXmlFile = "$projectRoot\crm\solutions\ResourceSkills.mappings.xml"
             PackageType = $PackageType
@@ -30,10 +36,9 @@ $solutionExt = if($PackageType -eq "Managed") { "_managed" }
         [PSCustomObject]@{
             DataZipFile = "$projectRoot\temp\packed\ResourceSkillsData.zip"
             SolutionZipFiles = @(
+                "$projectRoot\temp\packed\ResourceBase.zip"
                 "$projectRoot\temp\packed\ResourceSkills$solutionExt.zip"
             )
-			PackageFolder = "$projectRoot\src\Demo.ResourceManagementDeployment\bin\Debug\PkgFolder\"
-			PackageDllFile = "$projectRoot\src\Demo.ResourceManagementDeployment\bin\Debug\Demo.ResourceManagementDeployment.dll"
         }
     )
     #CrmOrganizationProvisionDefinition = [PSCustomObject]@{
