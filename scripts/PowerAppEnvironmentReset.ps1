@@ -48,8 +48,8 @@ $environmentRegions = @{
 
 if (-not(Get-Module -Name Microsoft.PowerApps.Administration.PowerShell) -or -not(Get-Module -Name Microsoft.PowerApps.PowerShell)) {
     Write-Host "Importing PowerApp Admin Modules..."
-    Import-Module .\PowerAppsCmdlets-V5\Microsoft.PowerApps.Administration.PowerShell.psm1 -Force
-    Import-Module .\PowerAppsCmdlets-V5\Microsoft.PowerApps.PowerShell.psm1 -Force
+    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force -AllowClobber
+    Install-Module -Name Microsoft.PowerApps.PowerShell -Force -AllowClobber
 }
 
 dir . | Unblock-File
