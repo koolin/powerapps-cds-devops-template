@@ -68,6 +68,11 @@ if ($recordedRecords.Count -gt 0 -and $RecordDirectory) {
     # create random json file name and create path
     $recordFileName = [guid]::NewGuid().ToString() + ".json"
     Write-Verbose "Record Directory: $RecordDirectory"
+    if(-not (Test-Path -Path $RecordDirectory)) {
+        md -Force $RecordDirectory
+        Write-Verbose "Created directory: $RecordDirectory"
+    }
+
     $FullRecordDirectory = "$RecordDirectory$recordFileName"
     Write-Verbose "Record Directory File Path: $FullRecordDirectory"
     
