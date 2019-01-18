@@ -1,6 +1,6 @@
 ﻿param(
     
-    [Parameter(Mandatory,ParameterSetName='CrmConnectionNameSet')]	
+    [Parameter(ParameterSetName='CrmConnectionNameSet')]	
     [ValidateSet('Online','OnPremise','InternetFacingDeployment','Online-Prod')]
     [string]
     $CrmConnectionName, # e.g. 'Online-Dev',
@@ -19,7 +19,7 @@ if($CrmConnectionName) {
     $CrmConnectionParameters = & "$PSScriptRoot\..\CrmConnectionParameters\$CrmConnectionName.ps1"
 }
 
-$crmConnection = Microsoft.Xrm.Tooling.CrmConnector.Powershell\Get-CrmConnection @CrmConnectionParameters
+$crmConnection = Get-CrmConnection @CrmConnectionParameters
 
 $Directory = "$PSScriptRoot/../..$RecordDirectory"
 
