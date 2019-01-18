@@ -67,7 +67,9 @@ $deletedFiles | % {
 if ($recordedRecords.Count -gt 0 -and $RecordDirectory) {
     # create random json file name and create path
     $recordFileName = [guid]::NewGuid().ToString() + ".json"
-    $FullRecordDirectory = "$PSScriptRoot/../..$RecordDirectory$recordFileName"
+    Write-Verbose "Record Directory: $RecordDirectory"
+    $FullRecordDirectory = "$RecordDirectory$recordFileName"
+    Write-Verbose "Record Directory File Path: $FullRecordDirectory"
     
     # write records to json file
     $recordedRecords | ConvertTo-Json | Out-File $FullRecordDirectory
