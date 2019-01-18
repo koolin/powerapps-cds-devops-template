@@ -72,7 +72,7 @@ if ($recordedRecords.Count -gt 0 -and $RecordDirectory) {
     Write-Verbose "Record Directory File Path: $FullRecordDirectory"
     
     # write records to json file
-    $recordedRecords | ConvertTo-Json | Out-File $FullRecordDirectory
+    $recordedRecords | ConvertTo-Json | Out-File $FullRecordDirectory -Force
 
     Write-Output "Deleted files have been recorded as entity records and saved as $recordFileName"
     Write-Verbose $FullRecordDirectory
