@@ -21,10 +21,14 @@ if($CrmConnectionName) {
 
 $crmConnection = Get-CrmConnection @CrmConnectionParameters
 
-$Directory = "$PSScriptRoot/../..$RecordDirectory"
+$Directory = "$PSScriptRoot/..$RecordDirectory"
+
+Write-Verbose "Record Directory: $Directory"
 
 # get listing of json files in delete directory location
 $recordFiles = Get-ChildItem -Path $Directory -Filter '*.json'
+
+Write-Verbose "Returned $recordFiles.Count .json files in directory."
 
 foreach($recordFile in $recordFiles) {
     # get content of JSON file
