@@ -21,6 +21,6 @@ $connParams = @{
 
 Write-Verbose $connParams
 
-Install-Module -Name Microsoft.Xrm.Data.PowerShell -Force -Verbose -Scope CurrentUser
+Install-Module -Name Microsoft.Xrm.Data.PowerShell -Force -Scope CurrentUser
 
 .\Execute-DeleteDataFromJson.ps1 -CrmConnectionParameters $connParams -Verbose -RecordDirectory $Directory
