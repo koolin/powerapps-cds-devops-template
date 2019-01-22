@@ -19,6 +19,8 @@ if($CrmConnectionName) {
     $CrmConnectionParameters = & "$PSScriptRoot\..\CrmConnectionParameters\$CrmConnectionName.ps1"
 }
 
+Import-Module Microsoft.Xrm.Data.PowerShell
+
 $crmConnection = Get-CrmConnection @CrmConnectionParameters
 
 $Directory = "$PSScriptRoot/..$RecordDirectory"

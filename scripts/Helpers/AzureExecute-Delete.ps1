@@ -8,7 +8,9 @@
     [Parameter(Mandatory=$true)]
     [string]$UserName,
     [Parameter(Mandatory=$true)]
-    [string]$Password
+    [string]$Password,
+    [Parameter(Mandatory=$true)]
+    [string]$Directory
 )
 
 $connParams = @{
@@ -19,4 +21,4 @@ $connParams = @{
 
 Write-Verbose $connParams
 
-.\Execute-DeleteDataFromJson.ps1 -CrmConnectionParameters $connParams -Verbose -RecordDirectory /deletes/
+.\Execute-DeleteDataFromJson.ps1 -CrmConnectionParameters $connParams -Verbose -RecordDirectory $Directory
