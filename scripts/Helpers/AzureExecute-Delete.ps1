@@ -19,7 +19,7 @@ $connParams = @{
     Credential = [PSCredential]::new($UserName, ($Password | ConvertTo-SecureString -AsPlainText -Force))
 }
 
-Write-Verbose $connParams
+Write-Verbose "($connParams | Out-String)"
 
 Install-Module -Name Microsoft.Xrm.Data.PowerShell -Force -Scope CurrentUser
 
