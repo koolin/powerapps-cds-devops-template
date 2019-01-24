@@ -25,7 +25,9 @@ if (-not(Get-Module -Name Microsoft.Xrm.Data.PowerShell)) {
 
 $crmConnection = Connect-CrmOnline -Credential $CrmConnectionParameters.Credential -ServerUrl $CrmConnectionParameters.ServerUrl
 
-$Directory = "$PSScriptRoot/..$RecordDirectory"
+Write-Verbose $crmConnection
+
+$Directory = "$PSScriptRoot/$RecordDirectory"
 
 Write-Verbose "Record Directory: $Directory"
 
