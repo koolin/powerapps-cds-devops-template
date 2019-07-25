@@ -1,6 +1,7 @@
-# cds-resourcemgmt-devops
-Example project for Microsoft Common Data Service DevOps
+# PowerApps CDS DevOps Template
+This project can server as a template to teams taking on PowerApps that manages the source code of any customizations through the CDS solution system and record data files.
 
+## Goals of the Project
 This project aims to achieve developer isolation for team development of CDS based solutions and fully automate build and release management with Azure DevOps Pipelines.
 
 Presentation, "ALM Practices for Building Common Data Service Products and Services", that accompanies this project can be found in the /docs folder.
@@ -27,4 +28,4 @@ https://github.com/knom/vsts-debug-tasks/
 
 ## Comments
 
-Note that the "Base" and "Skills" import/export settings are the working examples in this project.  Request and Full setting configurations are for demonstration purposes only.
+Note that the script "Base" and "Skills" import/export settings are the working examples in this project.  Request and Full setting configurations are for demonstration purposes only.
