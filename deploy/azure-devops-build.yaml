@@ -32,17 +32,13 @@ steps:
 
   continueOnError: true
 
-- powershell: ./'src/Demo.ResourceSkills.WebResources/commands/copy_html.ps1'
-  workingDirectory: src/Demo.ResourceSkills.WebResources/commands
-
-  displayName: 'PowerShell Script Copy HTML for ResourceSkills Web Resources'
-  continueOnError: true
-
-- powershell: ./'src/Demo.ResourceSkills.WebResources/commands/copy_images.ps1'
-  workingDirectory: src/Demo.ResourceSkills.WebResources/commands/
-
-  displayName: 'PowerShell Script Copy Images for ResourceSkills Web Resources'
-  continueOnError: true
+- task: PowerShell@2
+  inputs:
+    filePath: 'copy_html.ps1'
+    workingDirectory: 'src/Demo.ResourceSkills.WebResources/commands'
+- task: PowerShell@2
+  inputs:
+    filePath: './src/Demo.ResourceSkills.WebResources/commands/copy_images.ps1'
 
 - task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMToolInstaller.MSCRMToolInstaller@9
   displayName: 'MSCRM Tool Installer'
