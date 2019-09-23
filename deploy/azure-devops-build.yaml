@@ -1,8 +1,6 @@
-resources:
-- repo: self
-  clean: true
+
 pool:
-  name: 'Azure Pipelines'
+  vmImage: 'windows-latest'
 
 steps:
 - task: NuGetCommand@2
