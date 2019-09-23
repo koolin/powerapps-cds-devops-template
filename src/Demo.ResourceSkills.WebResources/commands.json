@@ -16,8 +16,5 @@
       "arguments": "-NoProfile -ExecutionPolicy Bypass -NonInteractive -File copy_images.ps1"
     }
   },
-  "-vs-binding": {
-    "BeforeBuild": [ "copy_html", "copy_images" ],
-    "AfterBuild": [ "build_typescript" ]
-  }
+  "-vs-binding": { "BeforeBuild": [ "copy_html", "copy_images" ] }
 }
