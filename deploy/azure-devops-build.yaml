@@ -34,8 +34,7 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    filePath: 'copy_html.ps1'
-    workingDirectory: 'src/Demo.ResourceSkills.WebResources/commands'
+    filePath: './src/Demo.ResourceSkills.WebResources/commandscopy_html.ps1'
 - task: PowerShell@2
   inputs:
     filePath: './src/Demo.ResourceSkills.WebResources/commands/copy_images.ps1'
