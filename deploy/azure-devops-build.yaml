@@ -35,9 +35,11 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: './src/Demo.ResourceSkills.WebResources/commands/copy_html.ps1'
+    workingDirectory: 'src/Demo.ResourceSkills.WebResources'
 - task: PowerShell@2
   inputs:
     filePath: './src/Demo.ResourceSkills.WebResources/commands/copy_images.ps1'
+    workingDirectory: 'src/Demo.ResourceSkills.WebResources'
 
 - task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMToolInstaller.MSCRMToolInstaller@9
   displayName: 'MSCRM Tool Installer'
