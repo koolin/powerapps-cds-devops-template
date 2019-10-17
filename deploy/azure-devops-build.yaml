@@ -59,7 +59,7 @@ steps:
 
   continueOnError: true
 
-- task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMPackSolution.MSCRMPackSolution@11
+- task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMPackSolution.MSCRMPackSolution@10
   displayName: 'MSCRM Pack Solution: ResourceBase Managed'
   inputs:
     unpackedFilesFolder: crm/solutions/ResourceBase
