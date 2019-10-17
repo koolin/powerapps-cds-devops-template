@@ -59,6 +59,19 @@ steps:
 
   continueOnError: true
 
+- task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMPackSolution.MSCRMPackSolution@11
+  displayName: 'MSCRM Pack Solution: ResourceBase Managed'
+  inputs:
+    unpackedFilesFolder: crm/solutions/ResourceBase
+
+    mappingFile: crm/solutions/ResourceBase.mappings.xml
+
+    packageType: Managed
+
+    outputPath: '$(build.sourcesdirectory)\temp\packed\'
+
+  continueOnError: true
+
 - powershell: |
    Import-Module .\Adoxio.Dynamics.DevOps\Adoxio.Dynamics.DevOps.psm1 -Force
    
