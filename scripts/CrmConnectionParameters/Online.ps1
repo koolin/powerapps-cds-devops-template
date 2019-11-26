@@ -5,7 +5,7 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 @{
-    OrganizationName = "orga745996c" # see Settings > Customizations > Developer Resources > "Unique Name"
-    ServerUrl = "https://orga745996c.crm3.dynamics.com" # the online organization URL
+    OrganizationName = "orgd94d0183" # see Settings > Customizations > Developer Resources > "Unique Name"
+    ServerUrl = "https://org9815f1c0.crm3.dynamics.com" # the online organization URL
     Credential = (Get-Credential) # prompt for credentials
 }

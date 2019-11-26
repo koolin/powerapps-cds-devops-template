@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SdkMessageProcessingStep Name="Demo.ResourceSkills.Plugins.ContactSkill: Create of demo_contactskill" SdkMessageProcessingStepId="{d31d8dc4-0fd8-e811-a968-000d3a33e0b1}">
+<SdkMessageProcessingStep Name="Demo.ResourceSkills.Plugins.ContactSkill: Create of demo_contactskill" SdkMessageProcessingStepId="{d31d8dc4-0fd8-e811-a968-000d3a33e0b1}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <PluginTypeName>Demo.ResourceSkills.Plugins.ContactSkill, Demo.ResourceSkills.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea8f82c46935337c</PluginTypeName>
   <PluginTypeId>aae5301b-f657-41f8-8254-41afa78d449f</PluginTypeId>
   <PrimaryEntity>demo_contactskill</PrimaryEntity>

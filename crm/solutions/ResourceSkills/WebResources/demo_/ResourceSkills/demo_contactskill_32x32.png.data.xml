@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{10e23a6d-70da-e811-a967-000d3a33eeed}</WebResourceId>
   <Name>demo_/ResourceSkills/demo_contactskill_32x32.png</Name>
   <WebResourceType>5</WebResourceType>

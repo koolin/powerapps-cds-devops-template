@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Role id="{06d5d34b-2fde-e811-a97c-000d3af481f1}" name="Resource Management">
+<Role id="{06d5d34b-2fde-e811-a97c-000d3af481f1}" name="Resource Management" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvAppendContact" level="Global" />

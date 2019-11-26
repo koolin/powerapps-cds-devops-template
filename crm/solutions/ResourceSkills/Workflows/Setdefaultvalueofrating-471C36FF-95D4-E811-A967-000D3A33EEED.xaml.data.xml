@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{471c36ff-95d4-e811-a967-000d3a33eeed}" Name="Set default value of rating" Description="Click to add description">
+<Workflow WorkflowId="{471c36ff-95d4-e811-a967-000d3a33eeed}" Name="Set default value of rating" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <XamlFileName>/Workflows/Setdefaultvalueofrating-471C36FF-95D4-E811-A967-000D3A33EEED.xaml</XamlFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
@@ -18,6 +18,7 @@
   <IntroducedVersion>1.0.0.0</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
+  <ProcessTriggerScope>2</ProcessTriggerScope>
   <PrimaryEntity>demo_contactskill</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Set default value of rating" />
@@ -25,22 +26,4 @@
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
   </Descriptions>
-  <ProcessTriggers>
-    <ProcessTrigger processtriggerid="{6153ab08-96d4-e811-a967-000d3a33eeed}">
-      <controltype>1</controltype>
-      <scope>2</scope>
-      <controlname>demo_rating</controlname>
-      <event>change</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>demo_contactskill</primaryentitytypecode>
-    </ProcessTrigger>
-    <ProcessTrigger processtriggerid="{6253ab08-96d4-e811-a967-000d3a33eeed}">
-      <scope>2</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>demo_contactskill</primaryentitytypecode>
-    </ProcessTrigger>
-  </ProcessTriggers>
 </Workflow>

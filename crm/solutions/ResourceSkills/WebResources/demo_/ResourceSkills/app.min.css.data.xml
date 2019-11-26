@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{e5e7e083-f0da-e811-a96f-000d3a33eb4e}</WebResourceId>
   <Name>demo_/ResourceSkills/app.min.css</Name>
   <WebResourceType>2</WebResourceType>

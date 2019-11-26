@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{40dcf96d-70da-e811-a968-000d3a33e0b1}</WebResourceId>
   <Name>demo_/ResourceSkills/skillrank.html</Name>
   <WebResourceType>1</WebResourceType>
