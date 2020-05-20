@@ -22,7 +22,7 @@
                     <row>
                       <cell id="{80a12b6e-037a-9aa9-9d33-1c7c9b076860}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Contact" languagecode="1033" />
                         </labels>
                         <control id="demo_contactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="demo_contactid" disabled="false" />
                       </cell>
@@ -35,7 +35,7 @@
                     <row>
                       <cell id="{6711a5ec-59b6-67e2-4131-246d96bcd7d1}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Resource Skill" languagecode="1033" />
                         </labels>
                         <control id="demo_resourceskillid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="demo_resourceskillid" disabled="false" />
                       </cell>
@@ -48,7 +48,7 @@
                     <row>
                       <cell id="{0e0769b7-c88b-7835-bb33-e54dc083c6d4}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Rating" languagecode="1033" />
                         </labels>
                         <control id="demo_rating" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="demo_rating" disabled="false" />
                       </cell>
@@ -77,7 +77,7 @@
                     <row>
                       <cell id="{038fcd4f-ddad-42e2-b87e-78adfa8ad0c0}" showlabel="true" locklevel="0" visible="false">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Name" languagecode="1033" />
                         </labels>
                         <control id="demo_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="demo_name" uniqueid="{88a72d87-4876-4488-ea47-1ce3bb02c810}" disabled="false" />
                       </cell>
@@ -90,7 +90,7 @@
                     <row>
                       <cell id="{f6fcbe08-7433-49ad-91a7-62e2449ac222}">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Owner" languagecode="1033" />
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>

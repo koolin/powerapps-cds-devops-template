@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.10951" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.17728" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>ResourceSkills</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Resource Skills" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.2.0.5</Version>
+    <Version>1.2.0.6</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>demo</UniqueName>
